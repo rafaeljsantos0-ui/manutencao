@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina 021 - BMT 6.0 S | Parâmetros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Cabeçalho -->
+    <header class="bg-slate-900 text-white shadow-md py-4 px-6">
+        <div class="max-w-2xl mx-auto flex justify-between items-center">
+            <a href="../" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded font-medium transition">&larr; Voltar ao Painel</a>
+            <span class="text-xs font-mono text-emerald-400 font-bold">ONLINE</span>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow max-w-2xl w-full mx-auto p-4 sm:p-6 space-y-6">
+        
+        <!-- Identificação e Ficha PDF -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-1 rounded">Ficha Técnica Oficial</span>
+            <h2 class="text-2xl font-bold text-slate-900 mt-2">Máquina 021: BMT 6.0 S</h2>
+            <p class="text-sm text-slate-600 mt-1">Consulte abaixo os parâmetros de aquecimento, percentuais de pigmento, ajuste de temperatura por cor, correntes de referência das resistências e dicas de ajuste para cada cor.</p>
+            
+            <div class="mt-4">
+                <a href="ficha-processo.pdf" target="_blank" rel="noopener noreferrer" class="w-full inline-flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition shadow-sm">
+                    📄 Visualizar Ficha de Processo Completa (PDF)
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção: Matriz de Ajuste por Cor -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                🎨 Variações de Parâmetros por Cor
+            </h3>
+            <p class="text-xs text-slate-500 mb-4">Ajustes obrigatórios nas zonas de aquecimento e recomendações de pigmentação.</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 text-xs uppercase font-semibold">
+                            <th class="p-3">Cor</th>
+                            <th class="p-3">Percentual de Pigmento</th>
+                            <th class="p-3">Cabeçote</th>
+                            <th class="p-3">Observações / Dicas</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-xs sm:text-sm">
+                        <tr>
+                            <td class="p-3 font-medium text-slate-900">Preto (Master)</td>
+                            <td class="p-3">0,9%</td>
+                            <td class="p-3">190°C</td>
+                            <td class="p-3 text-slate-600">Reduzir zona 2 em 5°C para evitar sobreaquecimento do pigmento.</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-medium text-slate-900">Azul</td>
+                            <td class="p-3">1,6%</td>
+                            <td class="p-3">195°C</td>
+                            <td class="p-3 text-slate-600">Parâmetro nominal padrão de referência da máquina.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium text-slate-900">Amarelo</td>
+                            <td class="p-3">1,6%</td>
+                            <td class="p-3">195°C</td>
+                            <td class="p-3 text-slate-600">Parâmetro nominal padrão de referência da máquina.</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-medium text-slate-900">Rosa</td>
+                            <td class="p-3">1,8%</td>
+                            <td class="p-3">200°C</td>
+                            <td class="p-3 text-slate-600">Exige carga térmica maior devido à opacidade do aditivo.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Seção: Mapa de Resistências e Correntes -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2 py-1 rounded">Diagrama de Resistências</span>
+            <h2 class="text-xl font-bold text-slate-900 mt-2">MAPA DE RESISTÊNCIAS</h2>
+            <p class="text-sm text-slate-600 mt-1 mb-4">Consulte abaixo o registro das correntes elétricas e valores nominais para diagnóstico rápido com alicate amperímetro.</p>
+            
+            <div class="mb-4">
+                <a href="ficha-resistencias.pdf" target="_blank" rel="noopener noreferrer" class="w-full inline-flex justify-center items-center bg-slate-800 hover:bg-slate-900 text-white font-medium py-2.5 px-4 rounded-lg text-sm transition shadow-sm">
+                    📄 Mapa Completo de Resistências (PDF)
+                </a>
+            </div>
+
+            <div class="overflow-x-auto mt-4">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 text-xs uppercase font-semibold">
+                            <th class="p-3">Zona</th>
+                            <th class="p-3">Potência</th>
+                            <th class="p-3">Corrente Alvo (A)</th>
+                            <th class="p-3">Tolerância</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-xs sm:text-sm font-mono">
+                        <tr>
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 01 (Alimentação)</td>
+                            <td class="p-3 text-slate-600">3.5 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">9.2 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 02 (Compressão)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 03 (Dosagem)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 04 (Dosagem)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 05 (Troca tela)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 06 (Flange quadrado após troca tela)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 07 (Cabeçote)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 08 (Cabeçote)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-sans font-medium text-slate-900">Zona 09 (Trafilas)</td>
+                            <td class="p-3 text-slate-600">4.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">10.5 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-3 font-sans font-medium text-slate-900">Cabeçote / Matriz</td>
+                            <td class="p-3 text-slate-600">5.0 kW</td>
+                            <td class="p-3 text-blue-600 font-bold">13.1 A</td>
+                            <td class="p-3 text-slate-500 font-sans">&plusmn; 5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+        Manutenção Eletrônica &bull; Documentação Interna da Planta
+    </footer>
+
+</body>
+</html>
